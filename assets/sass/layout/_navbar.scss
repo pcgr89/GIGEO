@@ -1,0 +1,41 @@
+.navigation {
+    background-color: $white;
+    &__logo {
+        font-weight: 600;
+        position: relative;
+        font-size: 2em;
+    }
+
+    &__art {
+        font-size: 0.25em;
+        top: 4px;
+        font-weight: $fw-regular;
+        position: absolute;
+        
+    }
+}
+
+.nav-link i {
+    color: #000000;
+    font-size: $large;
+    padding: .25rem;
+}
+
+@include media-breakpoint-down(md) {
+    .navigation {
+        background-color: $white;
+        &__logo {
+            font-weight: 600;
+            position: relative;
+            font-size: 3.5em;
+        }
+    
+        &__art {
+            font-size: 0.25em;
+            top: 4px;
+            font-weight: $fw-regular;
+            position: absolute;
+            
+        }
+    }
+}

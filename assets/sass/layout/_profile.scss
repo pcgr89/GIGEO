@@ -1,0 +1,82 @@
+.profile {
+    display: flex;
+    justify-content: space-between;
+    &__left {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__thumbnail {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+    }
+
+    &__name {
+        align-self: center;
+        padding: 1rem;
+    }
+
+    &__title {
+        font-size: $medium;
+        font-weight: $fw-bold;
+    }
+
+    &__followers {
+        font-size: $small;
+        margin-top: 4px;
+        color: $cloud;
+    }
+
+    &__button {
+        display: flex;
+        align-self: center;
+        padding: 1rem;
+    }
+
+    &__button--follow {
+        background-color: $watermelon;
+        padding: 0.5rem 1rem;
+        border: none;
+        color: $white;
+    }
+
+    &__button--message {
+        background-color: $aqua;
+        padding: 0.5rem 1rem;
+        border: none;
+        color: $white;
+    }
+    
+}
+
+@include media-breakpoint-down(md) {
+    .profile {
+    &__thumbnail {
+        width: 100px;
+        height: 100px;
+    }
+
+    &__left {
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+    &__title {
+        font-size: $xxx-large;
+        font-weight: $fw-bold;
+    }
+
+    &__followers {
+        font-size: $x-large;
+        margin-top: 4px;
+        color: $cloud;
+    }
+}
+
+}

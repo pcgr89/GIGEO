@@ -1,0 +1,40 @@
+.videos {
+    &__maintitle {
+        font-weight: $fw-medium;
+        font-size: $x-large;
+    }
+
+    &__card {
+        margin: 0.25rem 0;
+    }
+
+    &__title {
+        font-weight: $fw-bold;
+        font-size: $large;
+    }
+
+    &__info {
+        font-size: $small;
+        color: $cloud;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .videos {
+        &__maintitle {
+            font-weight: $fw-medium;
+            font-size: $xxx-large;
+            text-align: center;
+        }
+
+    &__title {
+        font-weight: $fw-bold;
+        font-size: $xx-large;
+    }
+
+    &__info {
+        font-size: $x-large;
+        color: $cloud;
+    }
+    }
+}
